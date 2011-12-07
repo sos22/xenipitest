@@ -542,6 +542,8 @@ static char * __init cmdline_cook(char *p, char *loader_name)
     return p;
 }
 
+void install_ipi_test(void);
+
 void __init __start_xen(unsigned long mbi_p)
 {
     char *memmap_type = NULL;
@@ -1341,7 +1343,9 @@ void __init __start_xen(unsigned long mbi_p)
     /* Hide UART from DOM0 if we're using it */
     serial_endboot();
 
-    domain_unpause_by_systemcontroller(dom0);
+    //domain_unpause_by_systemcontroller(dom0);
+
+    install_ipi_test();
 
     reset_stack_and_jump(init_done);
 }

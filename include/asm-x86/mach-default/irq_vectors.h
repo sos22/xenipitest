@@ -11,12 +11,13 @@
 #define LOCAL_TIMER_VECTOR	0xf9
 #define PMU_APIC_VECTOR 	0xf8
 #define CMCI_APIC_VECTOR	0xf7
+#define IPI_TEST_VECTOR         0xf6
 /*
  * High-priority dynamically-allocated vectors. For interrupts that
  * must be higher priority than any guest-bound interrupt.
  */
 #define FIRST_HIPRIORITY_VECTOR	0xf0
-#define LAST_HIPRIORITY_VECTOR  0xf6
+#define LAST_HIPRIORITY_VECTOR  0xf5
 
 /* Legacy PIC uses vectors 0xe0-0xef. */
 #define FIRST_LEGACY_VECTOR	0xe0

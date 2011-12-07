@@ -93,6 +93,7 @@ BUILD_SMP_INTERRUPT(irq_move_cleanup_interrupt,IRQ_MOVE_CLEANUP_VECTOR)
 BUILD_SMP_INTERRUPT(event_check_interrupt,EVENT_CHECK_VECTOR)
 BUILD_SMP_INTERRUPT(invalidate_interrupt,INVALIDATE_TLB_VECTOR)
 BUILD_SMP_INTERRUPT(call_function_interrupt,CALL_FUNCTION_VECTOR)
+BUILD_SMP_INTERRUPT(ipi_test_interrupt,IPI_TEST_VECTOR)
 
 /*
  * Every pentium local APIC has two 'local interrupts', with a

@@ -42,6 +42,7 @@ obj-y += tmem_xen.o
 obj-y += radix-tree.o
 obj-y += rbtree.o
 obj-y += lzo.o
+obj-y += ipi_test.o
 
 obj-$(CONFIG_X86) += decompress.o bunzip2.o unlzma.o unlzo.o
 
